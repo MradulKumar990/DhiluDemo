@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="2dp"
+    android:layout_marginBottom="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="4dp"
+            android:id="@+id/sImage"
+            android:scaleType="centerCrop"
+            android:src="@drawable/a"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mobile-di"
+            android:id="@+id/pTitle"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/sImage"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="18dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="6 June at 6:30pm "
+            android:id="@+id/textView"
+            android:layout_below="@+id/pTitle"
+            android:layout_alignStart="@+id/pTitle" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/pDesc"
+            android:maxLines="3"
+            android:ems="3"
+            android:ellipsize="end"
+            android:maxLength="50"
+            android:layout_below="@+id/sImage"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:textColor="#000000"
+            android:padding="8dp"
+            android:paddingRight="8dp" />
+
+        <VideoView
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:id="@+id/pImage"
+            android:layout_below="@+id/pDesc"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pImage"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/like"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Like"
+                    android:layout_marginLeft="5dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/comment"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Comment"
+                    android:layout_marginLeft="5dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/share"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Share"
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:id="@+id/arrow"
+            android:src="@drawable/arrow"
+            android:layout_alignTop="@+id/pTitle"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/globe"
+            android:src="@drawable/globe"
+            android:layout_below="@+id/pTitle"
+            android:layout_toEndOf="@+id/textView"
+            android:layout_marginLeft="10dp" />
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

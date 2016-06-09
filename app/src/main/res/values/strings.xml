@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">DemoFacebook</string>
+
+    <string-array name="array_title">
+        <item>a</item>
+        <item>Dark Nature</item>
+        <item>Sunny Nature</item>
+        <item>windy Nature</item>
+        <item>Nature Sound</item>
+    </string-array>
+
+    <string-array name="array_decs">
+        <item>none</item>
+        <item>Dark Nature is a straight-forward thriller based around traditional narrative hooks and suspense. Dark Nature story revolves around a family holiday gone.</item>
+        <item>In 1970, Nature first opened its Washington office; other branches opened in New York in 1985, Tokyo and Munich in 1987, Paris in 1989, San Francisco in 2001, Boston in 2004, and Hong Kong in 2005.</item>
+        <item>Nature claims a readership of about 424,000 total readers.The journal has a circulation of around 53,000 but studies have concluded that on average a single copy is shared by as many as 8 people.</item>
+        <item>Natural sounds are sounds produced by natural sources in their normal soundscape. It is a category whose definition is open for discussion, see the section below. The category includes the sounds of any living organism.</item>
+    </string-array>
+
+
+    <string name="permissionGranted">Permission Granted</string>
+    <string name="permissionNotGranted">Permission was not Granted</string>
+</resources>
